@@ -26,6 +26,12 @@
 (take 10 (fib))
 (take 10 (map * (naturals) (drop 1 (naturals))))
 
-(.indexOf "hello,clojure" "j")
-(. "hello,clojure" indexOf "j")
+;; 定义斐波那契数列 (defn fib []
+(defn fib []
+  (defn fib-iter [a b]
+    (lazy-seq (cons a (fib-iter b (+ a b)))))
+  (fib-iter 0 1))
+
+
+(take 10 (fib))
 

@@ -1,24 +1,17 @@
-(ns clojure-learn.base.clj-web
+(ns clojure-learn.base.clj-java
   (:require [clojure.string :as cstr])
   )
-
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
-
-(my-add [1 2 3 4])
-
-(.indexOf "hello,clojure" "j")
 
 (defn my-add [numbers]
   (let [n1 (first numbers)
         n3 (nth numbers 2)]
     (+ n1 n3)))
 (. "hello,clojure" indexOf "j")
+(my-add [1 2 3 4])
+
+(.indexOf "hello,clojure" "j")
 
 (import java.awt.Point)
-
 (let [pt (Point. 0 10)]
   (set! (.y pt) 100)
   (prn (.y pt))

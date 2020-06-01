@@ -38,11 +38,13 @@
 ;; -> ................................32
 
 
-;>>>>>>>> persistent bit-partitioned vector trie
+;>>>>>>>> persistent bit-partitioned vector trie todo 再详细学习
 ; persistent (版本数据均可见 数组 前缀树)
 ; bit-partitioned (位分区)
 ; vector (数组,连续内存)
 ; trie (前缀树(词频统计))
-
+(bit-shift-right 4 1)
+(type {})
+(type (apply hash-map (range 12)))
 
 
