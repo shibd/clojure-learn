@@ -7,17 +7,18 @@
   [x]
   (println x "Hello, World!"))
 
-(prn (my-add [1 2 3 4]))
+(my-add [1 2 3 4])
 
-(prn (.indexOf "hello,clojure" "j"))
+(.indexOf "hello,clojure" "j")
 
 (defn my-add [numbers]
   (let [n1 (first numbers)
         n3 (nth numbers 2)]
     (+ n1 n3)))
-(prn (. "hello,clojure" indexOf "j"))
+(. "hello,clojure" indexOf "j")
 
 (import java.awt.Point)
+
 (let [pt (Point. 0 10)]
   (set! (.y pt) 100)
   (prn (.y pt))
@@ -42,11 +43,4 @@
        (map (fn [node]
               (peer-str node)))
        (cstr/join ",")))
-
-(defn -main [& args]
-  (foo "baozi")
-  (chosse 10)
-  (prn (peers {"n1 n2"}))
-  )
-
 

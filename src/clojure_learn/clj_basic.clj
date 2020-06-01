@@ -18,21 +18,14 @@
 
 (defn fib [] (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1])))
 
-(prn (take 10 ((fn [[a b]] [b (+ a b)]) [0 1])))
-(prn (take 10 (iterate (fn [[a b]] [b (+ a b)]) [0 1])))
-(prn (take 10 (naturals)))
-(prn (take 10 (odds)))
-(prn (take 10 (evens)))
-(prn (take 10 (fib)))
-(prn (take 10 (map * (naturals) (drop 1 (naturals)))))
+(take 10 ((fn [[a b]] [b (+ a b)]) [0 1]))
+(take 10 (iterate (fn [[a b]] [b (+ a b)]) [0 1]))
+(take 10 (naturals))
+(take 10 (odds))
+(take 10 (evens))
+(take 10 (fib))
+(take 10 (map * (naturals) (drop 1 (naturals))))
 
-(prn (.indexOf "hello,clojure" "j"))
-(prn (. "hello,clojure" indexOf "j"))
-
-
-
-(defn -main [& args]
-  "this is main"
-  )
-
+(.indexOf "hello,clojure" "j")
+(. "hello,clojure" indexOf "j")
 

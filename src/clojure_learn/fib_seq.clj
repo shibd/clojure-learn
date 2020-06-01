@@ -7,9 +7,6 @@
   (fib-iter 0 1))
 
 
-(println (take 10 (fib)))
+(take 10 (fib))
 
-(defn -main [& args]
-  "this is main"
-  )
 

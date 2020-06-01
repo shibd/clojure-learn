@@ -11,9 +11,5 @@
 (prn (filter (string(str/split "A good day it is" #"\W+"))))
 
 (prn (filter #(> (count %) 2) (str/split "A good day it is" #"\W+")))
-
 ((fn [name]  (str "hello " name)) "world")
 
-(defn -main [& args]
-s
-  )
