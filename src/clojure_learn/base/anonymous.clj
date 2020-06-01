@@ -1,4 +1,4 @@
-(ns clojure-learn.anonymous
+(ns clojure-learn.base.anonymous
   (:require [clojure.string :as str]))
 
 (defn indexable-word? [w] (> (count w) 2))
