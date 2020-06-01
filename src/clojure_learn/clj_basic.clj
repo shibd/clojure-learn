@@ -1,4 +1,4 @@
-(ns com.baozi.clj-basic)
+(ns clojure-learn.clj-basic)
 
 (defn foo [x] (prn x "Hello,Clojure!"))
 

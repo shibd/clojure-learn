@@ -1,4 +1,4 @@
-(ns com.baozi.anonymous
+(ns clojure-learn.anonymous
   (:require [clojure.string :as str]))
 
 (defn indexable-word? [w] (> (count w) 2))
@@ -15,5 +15,5 @@
 ((fn [name]  (str "hello " name)) "world")
 
 (defn -main [& args]
-
+s
   )

@@ -1,4 +1,4 @@
-(ns com.baozi.fib-seq)
+(ns clojure-learn.fib-seq)
 
 ;; 定义斐波那契数列 (defn fib []
 (defn fib []
